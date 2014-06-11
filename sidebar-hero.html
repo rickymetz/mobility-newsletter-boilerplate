@@ -780,6 +780,79 @@ body.outlook p {
 
   <link href="styles.css" rel="stylesheet" type="text/css" />
 
+  <style>
+
+/* padding */
+
+.padtop{
+  padding-top: 20px !important;
+}
+
+.padbottom{
+  padding-bottom: 20px !important;
+}
+
+/* background colors */
+
+body, .body{
+  background-color: #D4D2C8;
+}
+
+.container{
+  background-color: #fff;
+  border-top: 3px solid #F16722;
+  box-shadow: 12px 0 15px -4px #B4B2AA, -12px 0 15px -4px #B4B2AA;
+}
+
+.header, .header .container{
+  background-color: #276D87;
+  border: none;
+  box-shadow: none;
+}
+
+.coloredrow{
+  background-color: #F7F9FA;
+}
+
+.coloredrowalt{
+  background-color: #612A12;
+}
+
+.footerrow{
+  background-color: #CDE6EF;
+}
+
+.legalrow{
+  background-color: #276D87;
+}
+
+
+
+/* footer row */
+.footerrow p{
+  color: #70706E;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.footerrow a{
+  color: #8B1B2F;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* legal row */
+.legalrow p{
+  color: #C0C7C8;
+}
+
+.legalrow a{
+  color: #fff;
+  text-decoration: none;
+}
+
+  </style>
+
 </head>
 <body>
 	<table class="body">
@@ -799,7 +872,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <img src="img/logo-main.png">
+                              <img mc:edit="logo" src="img/logo-main.png">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -832,7 +905,7 @@ body.outlook p {
                     <table class=" three columns">
                       <tr>
                         <td class="center left-text-pad">
-                        <img class="center" src="img/1-row-sean.png">
+                        <img mc:edit="img" class="center" src="img/1-row-sean.png">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -844,8 +917,8 @@ body.outlook p {
                     <table class="nine columns">
                       <tr>
                         <td class="right-text-pad">
-                          <h1> Hello Jack!</h1>
-                          <p>Welcome to the Mobility Labs Monthly Update. This is intended for the Mobility Labs team, clients, peers, and friends. We hope to keep you updated on what we are doing, as well as on trends in the industry as they relate to your world.</p>
+                          <h1 mc:edit="h1"> Hello Jack!</h1>
+                          <p mc:edit="p">Welcome to the Mobility Labs Monthly Update. This is intended for the Mobility Labs team, clients, peers, and friends. We hope to keep you updated on what we are doing, as well as on trends in the industry as they relate to your world.</p>
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -865,8 +938,8 @@ body.outlook p {
                     <table class="eight columns">
                       <tr>
                         <td class="left-text-pad">
-                          <h2> Our New Home in the District</h2>
-                          <p>Mobility Labs has expanded our team and moved into a new space. We are now working out of WeWork in Chinatown. We have added ____, _____ to our team of developers. In addition, ____ has taken on a greater role as a senior developer. We have replaced our departed social media expert with Whitney Cox, and expanded the role of ____.
+                          <h2 mc:edit="h2-1"> Our New Home in the District</h2>
+                          <p mc:edit="p-1">Mobility Labs has expanded our team and moved into a new space. We are now working out of WeWork in Chinatown. We have added ____, _____ to our team of developers. In addition, ____ has taken on a greater role as a senior developer. We have replaced our departed social media expert with Whitney Cox, and expanded the role of ____.
                           <br><br>
                           As our team continues to grow, we look forward to taking on bigger and more interesting challenges. You can keep up with our latest on our <a href="#" >blog.</a> </p>
                         </td>
@@ -881,7 +954,7 @@ body.outlook p {
                     <table class="four columns">
                       <tr>
                         <td class="center right-text-pad">
-                          <img class="center" src="img/2-row-wework.jpg">
+                          <img mc:edit="img-1" class="center" src="img/2-row-wework.jpg">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -902,7 +975,7 @@ body.outlook p {
                           <table class="button radius">
                             <tr>
                               <td>
-                                <a href="#"> Suggest to a Friend</a>
+                                <a href="#" mc:edit="button-1"> Suggest to a Friend</a>
                               </td>
                             </tr>
                           </table>
@@ -925,8 +998,8 @@ body.outlook p {
                     <table class="12 columns">
                       <tr>
                         <td class="text-pad">
-                          <h2> The Power of Techology in Education</h2>
-                          <p>As Mobility Labs becomes a mature company, we are finding that a large part of our focus has been, and will continue to be the intersection of technology and education. We believe this is a critical area of development in our society. If done well, it can provide great benefits:
+                          <h2 mc:edit="h2-2"> The Power of Techology in Education</h2>
+                          <p mc:edit="p-2">As Mobility Labs becomes a mature company, we are finding that a large part of our focus has been, and will continue to be the intersection of technology and education. We believe this is a critical area of development in our society. If done well, it can provide great benefits:
                           <ul>
                             <li>Increasing the overall capability of our workforce</li>
                             <li>Decreasing the educational divide</li>
@@ -954,8 +1027,8 @@ body.outlook p {
                     <table class="12 columns">
                       <tr>
                         <td class="text-pad">
-                          <h2>Around the Web</h2>
-                          <p>The topic of gamification is being widely discussed.  <a href="#" >Here are some of the resources we found</a>. We believe dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                          <h2 mc:edit="h2-3">Around the Web</h2>
+                          <p mc:edit="p-3">The topic of gamification is being widely discussed.  <a href="#" >Here are some of the resources we found</a>. We believe dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -975,8 +1048,8 @@ body.outlook p {
                      <table class="eight columns">
                       <tr>
                         <td class="left-text-pad">
-                          <h5>Video Games in the Classroom</h5>
-                          <p>Video games enable some of the worst elements of America’s failing education system.  
+                          <h2 mc:edit="h2-4">Video Games in the Classroom</h2>
+                          <p mc:edit="p-4">Video games enable some of the worst elements of America’s failing education system.  
 </p>
                         </td>
                         <td class="expander"></td>
@@ -989,7 +1062,7 @@ body.outlook p {
                     <table class=" four columns">
                       <tr>
                         <td class="center right-text-pad">
-                        <img class="center" src="img/5-row-classroomgames.jpg">
+                        <img mc:edit="img-4" class="center" src="img/5-row-classroomgames.jpg">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -1009,8 +1082,8 @@ body.outlook p {
                      <table class="eight columns">
                       <tr>
                         <td class="left-text-pad">
-                          <h5> Games, Not Gamification</h5>
-                          <p>Professor and author Jordan Shapiro took to the stage last week to argue that game-based learning could help address the need to evolve education here and abroad.</p>
+                          <h2 mc:edit="h2-5"> Games, Not Gamification</h2>
+                          <p mc:edit="p-5">Professor and author Jordan Shapiro took to the stage last week to argue that game-based learning could help address the need to evolve education here and abroad.</p>
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -1022,7 +1095,7 @@ body.outlook p {
                     <table class=" four columns">
                       <tr>
                         <td class="center right-text-pad">
-                        <img class="center" src="img/6-row-gameslearning.jpg">
+                        <img  mc:edit="img-5" class="center" src="img/6-row-gameslearning.jpg">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -1044,7 +1117,7 @@ body.outlook p {
                           <table class="button radius">
                             <tr>
                               <td>
-                                <a href="#"> Suggest to a Friend</a>
+                                <a mc:edit="button-2" href="#"> Suggest to a Friend</a>
                               </td>
                             </tr>
                           </table>
@@ -1066,7 +1139,7 @@ body.outlook p {
                     <table class="12 columns">
                       <tr>
                         <td class="text-pad nine sub-columns">
-                          <p>You are receiving this email because you’re subscribed to opur mailing list. If you wish to be unsubscribed from receiving these emails, <a href="#">click here</a>.</p>
+                          <p  mc:edit="footer-1">You are receiving this email because you’re subscribed to opur mailing list. If you wish to be unsubscribed from receiving these emails, <a href="#">click here</a>.</p>
                         </td>
                         <td class="three sub-columns"></td>
                         <td class="expander"></td>
@@ -1084,7 +1157,7 @@ body.outlook p {
                     <table class="12 columns">
                       <tr>
                         <td class="text-pad">
-                          <img src="img/logo-footer.png">
+                          <img mc:edit="img-footer" src="img/logo-footer.png">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -1101,7 +1174,7 @@ body.outlook p {
                     <table class="12 columns">
                       <tr>
                         <td class="text-pad nine sub-columns">
-                          <p>Mobility Labs is an internet consultancy focused on enhancing your online assets. We are a community of inspired programmers, infrastructure engineers, and designers who share a passion for creating innovative digital strategies.</p>
+                          <p mc:edit="footer-2">Mobility Labs is an internet consultancy focused on enhancing your online assets. We are a community of inspired programmers, infrastructure engineers, and designers who share a passion for creating innovative digital strategies.</p>
                         </td>
                         <td class="three sub-columns"></td>
                         <td class="expander"></td>
