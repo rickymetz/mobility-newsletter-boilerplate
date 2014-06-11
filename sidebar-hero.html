@@ -323,7 +323,7 @@ img.center {
 /* Typography */
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #222222;
+  color: #2D3A40;
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
@@ -333,15 +333,17 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
   word-break: normal;
+  margin-bottom: 10px;
 }
 
-h1 {font-size: 40px;}
-h2 {font-size: 36px;}
-h3 {font-size: 32px;}
-h4 {font-size: 28px;}
-h5 {font-size: 24px;}
-h6 {font-size: 20px;}
+h1 {font-size: 28.383px;}
+h2 {font-size: 25.229px;}
+h3 {font-size: 22.426px;}
+h4 {font-size: 19.934px;}
+h5 {font-size: 17.719px;}
+h6 {font-size: 15.75px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
@@ -358,20 +360,20 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
+  color: #F16722; 
   text-decoration: none;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #D85C1E !important;
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #D85C1E !important;
 }
 
 a:visited { 
-  color: #2ba6cb !important;
+  color: #F16722 !important;
 }
 
 h1 a, 
@@ -380,7 +382,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #2ba6cb;
+  color: #F16722;
 }
 
 h1 a:active, 
@@ -389,7 +391,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #2ba6cb !important; 
+  color: #F16722 !important; 
 } 
 
 h1 a:visited, 
@@ -398,7 +400,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #2ba6cb !important; 
+  color: #F16722 !important; 
 } 
 
 /* Panels */
@@ -419,7 +421,7 @@ h6 a:visited {
 
 /* Buttons */
 
-table.button,
+table.button, 
 table.tiny-button,
 table.small-button,
 table.medium-button,
@@ -436,10 +438,10 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #2284a1;
+  background: #F16722;
+  border: none;
   color: #ffffff;
-  padding: 8px 0;
+  padding: 8px 8px;
 }
 
 table.tiny-button td {
@@ -490,7 +492,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2795b6 !important;
+  background: #D85C1E !important;
 }
 
 table.button:hover td a,
@@ -504,7 +506,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2795b6 !important;
+  background: #D85C1E !important;
 }
 
 table.button:hover td a,
@@ -771,6 +773,13 @@ body.outlook p {
     }
 
   </style>
+
+  <!--*************************************************
+  * EXTERNAL CSS. INLINE A COPY BEFORE PRODUCTION USE *
+  *************************************************/-->
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 	<table class="body">
@@ -790,10 +799,9 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <img src="http://placehold.it/200x50">
+                              <img src="img/logo-main.png">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">SIDEBAR HERO</span>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -808,7 +816,6 @@ body.outlook p {
             </tr>
           </table>
 
-          <br>
 
           <table class="container">
             <tr>
@@ -817,14 +824,14 @@ body.outlook p {
               <!-- content start -->
 
               <!-- first item-->
-              <table class="row">
+              <table class="padtop padbottom row">
                 <tr>
                   
                   <td class="wrapper">
 
                     <table class=" three columns">
                       <tr>
-                        <td class="center">
+                        <td class="center left-text-pad">
                         <img class="center" src="img/1-row-sean.png">
                         </td>
                         <td class="expander"></td>
@@ -836,8 +843,8 @@ body.outlook p {
 
                     <table class="nine columns">
                       <tr>
-                        <td>
-                          <h3> Hello Jack!</h3>
+                        <td class="right-text-pad">
+                          <h1> Hello Jack!</h1>
                           <p>Welcome to the Mobility Labs Monthly Update. This is intended for the Mobility Labs team, clients, peers, and friends. We hope to keep you updated on what we are doing, as well as on trends in the industry as they relate to your world.</p>
                         </td>
                         <td class="expander"></td>
@@ -848,20 +855,21 @@ body.outlook p {
                 </tr>
               </table>
               <!--end first item-->
-              <br>
+              
               <!-- second item-->
-              <table class="row">
+              <table class="padtop padbottom row coloredrow">
                 <tr>
                   
                   <td class="wrapper">
 
                     <table class="eight columns">
                       <tr>
-                        <td>
-                          <h4> Our New Home in the District</h4>
+                        <td class="left-text-pad">
+                          <h2> Our New Home in the District</h2>
                           <p>Mobility Labs has expanded our team and moved into a new space. We are now working out of WeWork in Chinatown. We have added ____, _____ to our team of developers. In addition, ____ has taken on a greater role as a senior developer. We have replaced our departed social media expert with Whitney Cox, and expanded the role of ____.
                           <br><br>
                           As our team continues to grow, we look forward to taking on bigger and more interesting challenges. You can keep up with our latest on our <a href="#" >blog.</a> </p>
+                          <br>
 
                           <table class="button radius">
                             <tr>
@@ -882,7 +890,7 @@ body.outlook p {
 
                     <table class="four columns">
                       <tr>
-                        <td class="center">
+                        <td class="center right-text-pad">
                           <img class="center" src="img/2-row-wework.jpg">
                         </td>
                         <td class="expander"></td>
@@ -894,18 +902,17 @@ body.outlook p {
                 </tr>
               </table>
               <!--end second item-->
-              <br>
-              <br>
+              
               <!--third item-->
-              <table class="row">
+              <table class="padtop padbottom row">
                 <tr>
                   
                   <td class="wrapper last">
 
                     <table class="12 columns">
                       <tr>
-                        <td>
-                          <h4> The Power of Techology in Education</h4>
+                        <td class="text-pad">
+                          <h2> The Power of Techology in Education</h2>
                           <p>As Mobility Labs becomes a mature company, we are finding that a large part of our focus has been, and will continue to be the intersection of technology and education. We believe this is a critical area of development in our society. If done well, it can provide great benefits:
                           <ul>
                             <li>Increasing the overall capability of our workforce</li>
@@ -924,18 +931,17 @@ body.outlook p {
                 </tr>
               </table>
               <!--end third item-->
-              <br>
-                      <br>
+              
               <!--fourth item-->
-              <table class="row">
+              <table class="padtop coloredrow row">
                 <tr>
                   
                   <td class="wrapper last">
 
                     <table class="12 columns">
                       <tr>
-                        <td>
-                          <h4>Around the Web</h4>
+                        <td class="text-pad">
+                          <h2>Around the Web</h2>
                           <p>The topic of gamification is being widely discussed.  <a href="#" >Here are some of the resources we found</a>. We believe dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                         </td>
                         <td class="expander"></td>
@@ -948,14 +954,14 @@ body.outlook p {
               <!--end fourth item-->
 
               <!-- fifth item-->
-              <table class="row">
+              <table class="coloredrow row">
                 <tr>
                   
                   <td class="wrapper">
 
                      <table class="eight columns">
                       <tr>
-                        <td>
+                        <td class="left-text-pad">
                           <h5>Video Games in the Classroom</h5>
                           <p>Video games enable some of the worst elements of America’s failing education system.  
 </p>
@@ -969,7 +975,7 @@ body.outlook p {
                    
                     <table class=" four columns">
                       <tr>
-                        <td class="center">
+                        <td class="center right-text-pad">
                         <img class="center" src="img/5-row-classroomgames.jpg">
                         </td>
                         <td class="expander"></td>
@@ -982,14 +988,14 @@ body.outlook p {
               <!--end fifth item-->
 
               <!-- sixth item-->
-              <table class="row">
+              <table class="padbottom coloredrow row">
                 <tr>
                   
                   <td class="wrapper">
 
                      <table class="eight columns">
                       <tr>
-                        <td>
+                        <td class="left-text-pad">
                           <h5> Games, Not Gamification</h5>
                           <p>Professor and author Jordan Shapiro took to the stage last week to argue that game-based learning could help address the need to evolve education here and abroad.</p>
                         </td>
@@ -1002,7 +1008,7 @@ body.outlook p {
                    
                     <table class=" four columns">
                       <tr>
-                        <td class="center">
+                        <td class="center right-text-pad">
                         <img class="center" src="img/6-row-gameslearning.jpg">
                         </td>
                         <td class="expander"></td>
@@ -1013,20 +1019,19 @@ body.outlook p {
                 </tr>
               </table>
               <!--end sixth item-->
-              <br><br>
               <!--seventh item-->
-              <table class="row">
+              <table class="coloredrowalt row">
                 <tr>
                   
                   <td class="wrapper last">
 
                     <table class="12 columns">
                       <tr>
-                        <td>
-                          <table class="button">
+                        <td <td class="text-pad">
+                          <table class="button radius">
                             <tr>
                               <td>
-                                <a href="#">Suggest to a Friend</a>
+                                <a href="#"> Suggest to a Friend</a>
                               </td>
                             </tr>
                           </table>
@@ -1039,21 +1044,34 @@ body.outlook p {
                 </tr>
               </table>
               <!--end seventh item-->
-              <br>
              <!--eigth item-->
-              <table class="row">
+              <table class="padtop footerrow row">
                 <tr>
                   
                   <td class="wrapper last">
 
                     <table class="12 columns">
                       <tr>
-                        <td>
+                        <td class="text-pad nine sub-columns">
                           <p>You are receiving this email because you’re subscribed to opur mailing list. If you wish to be unsubscribed from receiving these emails, <a href="#">click here</a>.</p>
+                        </td>
+                        <td class="three sub-columns"></td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
 
-                          <img src="http://placehold.it/200x50">
-                          
-                          <p>Mobility Labs is an internet consultancy focused on enhancing your online assets. We are a community of inspired programmers, infrastructure engineers, and designers who share a passion for creating innovative digital strategies.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="footerrow row">
+                <tr>
+                  
+                  <td class="wrapper last">
+
+                    <table class="12 columns">
+                      <tr>
+                        <td class="text-pad">
+                          <img src="img/logo-footer.png">
                         </td>
                         <td class="expander"></td>
                       </tr>
@@ -1062,20 +1080,37 @@ body.outlook p {
                   </td>
                 </tr>
               </table>
+              <table class="padbottom footerrow row">
+                <tr>
+                  
+                  <td class="wrapper last">
+
+                    <table class="12 columns">
+                      <tr>
+                        <td class="text-pad nine sub-columns">
+                          <p>Mobility Labs is an internet consultancy focused on enhancing your online assets. We are a community of inspired programmers, infrastructure engineers, and designers who share a passion for creating innovative digital strategies.</p>
+                        </td>
+                        <td class="three sub-columns"></td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
               <!--end eigth item-->
-              <br>
-              <br>
+
               <!-- Legal + Unsubscribe -->
-              <table class="row">
+              <table class=" legalrow row">
                 <tr>
                   <td class="wrapper last">
 
                     <table class="twelve columns">
                       <tr>
-                        <td align="center">
-                          <center>
-                            <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
-                          </center>
+                        <td class="text-pad">
+                          
+                            <p >© 2014 Mobility Labs. <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy</a></p>
+                          
                         </td>
                         <td class="expander"></td>
                       </tr>
